@@ -1,0 +1,17 @@
+---
+- hosts: all
+  connection: local
+  sudo: yes
+
+  roles:
+    - common
+    - hhvm
+    - php-fpm
+    - memcached
+    - mariadb
+    - nginx
+    - wp-cli
+    - varnish
+    - admin
+    - xhprof
+
